@@ -1,0 +1,23 @@
+Quick Win: Automate Your Client Intake in 2 Weeks
+
+Subject: You're wasting 7 hours a week on paperwork (here's the fix)
+
+Hey [First Name],
+
+If your team is still manually chasing intake forms, copying data into your CRM, and playing calendar tag — you're losing roughly 7 hours every week.
+
+**Here's what one 4-person consulting firm did:**
+Using Typeform + Zapier + HubSpot (all no-code), they automated:
+• Form validation & follow-up reminders
+• Calendly scheduling triggers
+• Auto CRM entry with lead scoring
+
+Result? 65% less admin time. Built in 11 days. Zero developers.
+
+**Your action step:**
+Audit ONE intake touchpoint this week. Where does data get entered twice? That's your automation starting point.
+
+Most teams recoup the setup time within the first month.
+
+---
+P.S. Want a free 20-min intake audit? I'll map exactly where you're bleeding hours. Reply "INTAKE" and let's talk.

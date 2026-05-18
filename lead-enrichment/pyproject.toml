@@ -1,0 +1,19 @@
+[project]
+name = "lead-enrichment"
+version = "0.1.0"
+description = "AI-powered lead enrichment and scoring"
+requires-python = ">=3.11"
+
+dependencies = [
+    "anthropic>=0.40.0",
+    "pydantic>=2.5.0",
+    "python-dotenv>=1.0.0",
+    "email-validator>=2.0.0",
+]
+
+# Optional dependencies for production use
+[project.optional-dependencies]
+production = [
+    "clearbit>=0.1.7",
+    "requests>=2.31.0",  # For API calls to Apollo, BuiltWith, etc
+]

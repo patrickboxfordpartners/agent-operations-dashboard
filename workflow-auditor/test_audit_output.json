@@ -1,0 +1,275 @@
+{
+  "audit_id": "test_001",
+  "client_name": "Test Accounting Firm",
+  "vertical": "services",
+  "workflow": {
+    "workflow_name": "New Client Onboarding Process",
+    "frequency": "10-15 times per month (approximately 2-4 times per week)",
+    "total_time_per_cycle": 45.0,
+    "people_involved": [
+      "Client",
+      "Office Manager"
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "action": "Client completes intake form with personal, business, and financial details",
+        "performed_by": "Client",
+        "tool": "Intake Form (likely PDF, Google Form, or paper-based)",
+        "avg_duration_minutes": 25.0,
+        "pain_points": [
+          "Form is lengthy (20-30 minutes to complete), creating friction for prospective clients",
+          "High field count increases likelihood of errors or omissions",
+          "No real-time validation to catch missing or invalid data before submission",
+          "Format may not be mobile-friendly, limiting accessibility"
+        ],
+        "automation_potential": "high"
+      },
+      {
+        "step_number": 2,
+        "action": "Office manager manually reviews submitted intake form for completeness and accuracy",
+        "performed_by": "Office Manager",
+        "tool": "Email / Manual review (no automated validation system)",
+        "avg_duration_minutes": 15.0,
+        "pain_points": [
+          "Entirely manual process with no automated checks",
+          "Repetitive task consuming significant office manager bandwidth",
+          "Human error risk \u2014 items can be missed during review",
+          "No standardized checklist, leading to inconsistent reviews"
+        ],
+        "automation_potential": "very_high"
+      },
+      {
+        "step_number": 3,
+        "action": "Office manager emails client to request missing or corrected information; awaits response",
+        "performed_by": "Office Manager",
+        "tool": "Email (Gmail / Outlook)",
+        "avg_duration_minutes": 20.0,
+        "pain_points": [
+          "Back-and-forth email chains extend onboarding by 2-3 days on average",
+          "Delays create a poor first impression for new clients",
+          "No tracking system for outstanding requests \u2014 items can fall through the cracks",
+          "Multiple rounds of follow-up may be needed if client responds incompletely again",
+          "Office manager must context-switch repeatedly to monitor email threads"
+        ],
+        "automation_potential": "very_high"
+      },
+      {
+        "step_number": 4,
+        "action": "Office manager manually keys completed client data into CRM",
+        "performed_by": "Office Manager",
+        "tool": "CRM (e.g., HubSpot, Salesforce, or similar)",
+        "avg_duration_minutes": 10.0,
+        "pain_points": [
+          "Duplicate data entry \u2014 information already exists in the intake form",
+          "Transcription errors can corrupt client records",
+          "Time-consuming and adds no strategic value",
+          "CRM record creation may be delayed if office manager is busy with other tasks"
+        ],
+        "automation_potential": "very_high"
+      },
+      {
+        "step_number": 5,
+        "action": "Office manager manually creates standardized folder structure for new client in Google Drive",
+        "performed_by": "Office Manager",
+        "tool": "Google Drive",
+        "avg_duration_minutes": 5.0,
+        "pain_points": [
+          "Repetitive manual task that follows the same pattern every time",
+          "Inconsistent folder naming or structure if done manually across different staff",
+          "Easily forgotten during busy periods, delaying file organization for the client"
+        ],
+        "automation_potential": "very_high"
+      },
+      {
+        "step_number": 6,
+        "action": "Office manager sends welcome email with next steps to new client",
+        "performed_by": "Office Manager",
+        "tool": "Email (Gmail / Outlook)",
+        "avg_duration_minutes": 5.0,
+        "pain_points": [
+          "Frequently forgotten, leaving new clients without direction or confirmation",
+          "No standardized template enforced, leading to inconsistent messaging",
+          "Missed emails damage client trust at a critical relationship-building moment",
+          "No automated trigger to ensure this step is never skipped"
+        ],
+        "automation_potential": "very_high"
+      }
+    ],
+    "current_cost": {
+      "time_per_week_hours": 9.4,
+      "hourly_rate": 25,
+      "weekly_cost": 235,
+      "annual_cost": 12220
+    }
+  },
+  "solutions": {
+    "solution_1_conservative": {
+      "name": "Smart Intake Form + Templated Communications",
+      "description": "Replace the existing intake form with a modern, validated digital form and add email templates for welcome and follow-up communications. Focuses on the highest-friction client-facing steps without disrupting backend processes.",
+      "automation_level": 0.35,
+      "architecture": {
+        "diagram": "Client \u2192 Typeform/JotForm (with validation) \u2192 Email notification to Office Manager \u2192 Manual review \u2192 Gmail templates (welcome/follow-up) \u2192 Manual CRM entry \u2192 Manual folder creation",
+        "tools": [
+          "Typeform or JotForm",
+          "Gmail Templates / Gmail Canned Responses",
+          "Google Drive (manual folder template)"
+        ],
+        "integration_points": [
+          "Form submission triggers email to Office Manager",
+          "Gmail templates accessible via shortcut for welcome emails"
+        ]
+      },
+      "tools": [
+        "Typeform",
+        "Gmail Templates",
+        "Google Drive folder template"
+      ],
+      "estimated_outcomes": {
+        "time_saved_per_cycle_minutes": 16,
+        "new_cycle_time_minutes": 29,
+        "time_savings_percent": 0.36,
+        "annual_cost_after": 7820,
+        "annual_savings": 4400
+      },
+      "build_cost": {
+        "your_hours": 12,
+        "your_rate": 150,
+        "your_cost": 1800,
+        "tool_setup": 0,
+        "total": 1800,
+        "payback_months": 4.9
+      },
+      "monthly_tool_cost": 35.0,
+      "risks": [
+        "Office Manager may forget to use templates without enforcement",
+        "Form validation reduces but doesn't eliminate follow-up emails",
+        "CRM and folder creation remain manual bottlenecks"
+      ],
+      "timeline_weeks": 2
+    },
+    "solution_2_balanced": {
+      "name": "Automated Intake-to-CRM Pipeline with Workflow Orchestration",
+      "description": "End-to-end automation connecting a smart intake form to CRM creation, Drive folder provisioning, and welcome email \u2014 orchestrated through a low-code automation platform. Office Manager only handles exception cases (missing data follow-ups), with automated tracking.",
+      "automation_level": 0.7,
+      "architecture": {
+        "diagram": "Client \u2192 Typeform (with conditional logic + validation) \u2192 Make.com/Zapier webhook \u2192 [Branch 1: Data complete? \u2192 Create CRM contact in HubSpot \u2192 Generate Drive folder from template \u2192 Send templated welcome email via Gmail] [Branch 2: Data incomplete \u2192 Auto-send follow-up email with specific missing fields \u2192 Track in Airtable until resolved \u2192 Loop back] \u2192 Slack/email notification to Office Manager on completion",
+        "tools": [
+          "Typeform",
+          "Make.com (or Zapier)",
+          "HubSpot CRM",
+          "Google Drive API",
+          "Gmail API",
+          "Airtable (tracking pending intakes)"
+        ],
+        "integration_points": [
+          "Typeform \u2192 Make.com webhook",
+          "Make.com \u2192 HubSpot (contact create)",
+          "Make.com \u2192 Google Drive (folder copy from template)",
+          "Make.com \u2192 Gmail (send welcome email)",
+          "Make.com \u2192 Airtable (log + status track)",
+          "Airtable \u2192 Slack (alerts for stalled intakes)"
+        ]
+      },
+      "tools": [
+        "Typeform",
+        "Make.com",
+        "HubSpot",
+        "Google Drive",
+        "Gmail",
+        "Airtable"
+      ],
+      "estimated_outcomes": {
+        "time_saved_per_cycle_minutes": 32,
+        "new_cycle_time_minutes": 13,
+        "time_savings_percent": 0.71,
+        "annual_cost_after": 3550,
+        "annual_savings": 8670
+      },
+      "build_cost": {
+        "your_hours": 28,
+        "your_rate": 150,
+        "your_cost": 4200,
+        "tool_setup": 200,
+        "total": 4400,
+        "payback_months": 6.1
+      },
+      "monthly_tool_cost": 90.0,
+      "risks": [
+        "Initial automation may need tuning for edge cases (unusual intake responses)",
+        "Requires HubSpot API access and proper field mapping",
+        "Office Manager needs brief training on monitoring Airtable dashboard",
+        "Make.com scenario errors require monitoring during first month"
+      ],
+      "timeline_weeks": 4
+    },
+    "solution_3_aggressive": {
+      "name": "AI-Powered Onboarding Agent with Intelligent Validation",
+      "description": "Fully automated onboarding system with AI-driven intake validation, conversational follow-up via SMS/email, automatic data enrichment, and zero-touch CRM/Drive/welcome flows. Office Manager only intervenes for genuine exceptions flagged by the AI.",
+      "automation_level": 0.92,
+      "architecture": {
+        "diagram": "Client \u2192 Smart conversational intake (Typeform + AI logic) \u2192 GPT-4 validation layer (checks completeness, consistency, business legitimacy) \u2192 [Auto-enrichment via Clearbit for business data] \u2192 If issues: AI agent sends personalized follow-up via email/SMS, handles client responses conversationally \u2192 Once complete: Parallel automation creates HubSpot contact + Drive folder structure + DocuSign engagement letter + calendar booking link + personalized AI-generated welcome email \u2192 Slack digest to Office Manager with summary",
+        "tools": [
+          "Typeform",
+          "Make.com",
+          "OpenAI GPT-4 API",
+          "Clearbit (data enrichment)",
+          "Twilio (SMS follow-ups)",
+          "HubSpot CRM",
+          "Google Drive API",
+          "DocuSign",
+          "Calendly",
+          "Gmail API",
+          "Slack"
+        ],
+        "integration_points": [
+          "Typeform \u2192 GPT-4 validation prompt",
+          "GPT-4 \u2192 Twilio/Gmail for conversational follow-ups",
+          "Clearbit \u2192 HubSpot enrichment",
+          "Make.com orchestrates parallel CRM/Drive/DocuSign/Calendly creation",
+          "GPT-4 generates personalized welcome email content",
+          "Slack receives daily digest"
+        ]
+      },
+      "tools": [
+        "Typeform",
+        "Make.com",
+        "OpenAI GPT-4",
+        "Clearbit",
+        "Twilio",
+        "HubSpot",
+        "Google Drive",
+        "DocuSign",
+        "Calendly",
+        "Slack"
+      ],
+      "estimated_outcomes": {
+        "time_saved_per_cycle_minutes": 41,
+        "new_cycle_time_minutes": 4,
+        "time_savings_percent": 0.91,
+        "annual_cost_after": 1100,
+        "annual_savings": 11120
+      },
+      "build_cost": {
+        "your_hours": 70,
+        "your_rate": 150,
+        "your_cost": 10500,
+        "tool_setup": 500,
+        "total": 11000,
+        "payback_months": 11.9
+      },
+      "monthly_tool_cost": 280.0,
+      "risks": [
+        "AI validation may produce false positives/negatives requiring tuning",
+        "Conversational AI follow-ups need careful prompt engineering and guardrails",
+        "Higher tool stack creates more failure points and monitoring overhead",
+        "Compliance considerations for AI handling financial data",
+        "Payback period exceeds 12 months unless volume scales beyond 15/month",
+        "Client-facing AI interactions risk brand impact if poorly tuned"
+      ],
+      "timeline_weeks": 7
+    }
+  },
+  "recommended_solution": "solution_2_balanced",
+  "generated_at": "2026-04-25T18:41:13.558927"
+}

@@ -1,0 +1,19 @@
+[project]
+name = "workflow-auditor"
+version = "0.1.0"
+description = "Converts client workflows into AI automation roadmaps"
+requires-python = ">=3.11"
+
+dependencies = [
+    "anthropic>=0.40.0",
+    "fastapi>=0.109.0",
+    "uvicorn>=0.27.0",
+    "pydantic>=2.5.0",
+    "python-multipart>=0.0.6",
+    "notion-client>=2.2.1",
+    "python-dotenv>=1.0.0",
+    "httpx>=0.25.0",
+]
+
+[project.scripts]
+auditor-server = "processing.server:main"

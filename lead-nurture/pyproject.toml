@@ -1,0 +1,13 @@
+[project]
+name = "lead-nurture"
+version = "0.1.0"
+description = "AI-powered lead qualification and nurture system"
+requires-python = ">=3.11"
+
+dependencies = [
+    "anthropic>=0.40.0",
+    "pydantic>=2.5.0",
+    "python-dotenv>=1.0.0",
+    "sendgrid>=6.11.0",
+    "httpx>=0.25.0",
+]

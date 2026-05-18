@@ -1,0 +1,11 @@
+{"timestamp": "2026-04-25T17:41:20.077144", "model": "claude-sonnet-4-6", "cost": 0.011244, "daily_total": 0.01}
+{"timestamp": "2026-04-25T17:41:32.728251", "model": "claude-sonnet-4-6", "cost": 0.011244, "daily_total": 0.02}
+{"timestamp": "2026-04-25T17:44:34.449078", "model": "claude-sonnet-4-6", "cost": 0.011289, "daily_total": 0.01}
+{"timestamp": "2026-04-25T17:44:47.860601", "model": "claude-sonnet-4-6", "cost": 0.011634, "daily_total": 0.02}
+{"timestamp": "2026-04-25T17:44:52.877836", "model": "claude-sonnet-4-6", "cost": 0.006120, "daily_total": 0.03}
+{"timestamp": "2026-04-25T17:49:02.665764", "model": "claude-sonnet-4-6", "cost": 0.011619, "daily_total": 0.01}
+{"timestamp": "2026-04-25T17:49:10.908160", "model": "claude-sonnet-4-6", "cost": 0.007812, "daily_total": 0.02}
+{"timestamp": "2026-04-25T17:49:17.043668", "model": "claude-sonnet-4-6", "cost": 0.004998, "daily_total": 0.02}
+{"timestamp": "2026-04-25T17:49:17.796783", "model": "voyage-voyage-2", "cost": 0.000028, "daily_total": 0.02}
+{"timestamp": "2026-04-25T17:54:54.320665", "model": "voyage-voyage-2", "cost": 0.000000, "daily_total": 0.00}
+{"timestamp": "2026-04-25T17:54:56.685952", "model": "claude-sonnet-4-6", "cost": 0.001614, "daily_total": 0.00}

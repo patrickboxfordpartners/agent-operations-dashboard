@@ -1,0 +1,25 @@
+How We Cut Scheduling Time by 68% for a Dental Practice
+
+A dental front desk was drowning in 15 hours of scheduling calls every week. Here's how we fixed it in under 4 months.
+
+The problem was straightforward — patients calling to book, reschedule, or cancel appointments consumed the entire morning. The receptionist couldn't focus on patients actually in the office.
+
+We built a simple AI scheduling assistant using Make and Claude.
+
+→ Patients interact via SMS or web chat
+→ AI handles booking, rescheduling & FAQs
+→ Complex cases escalate to the front desk automatically
+→ Calendar syncs in real time — zero double bookings
+
+The result?
+
+✅ 15 hrs/week → 5 hrs/week
+✅ 68% reduction in scheduling time
+✅ Full ROI in 3.4 months
+✅ Staff now focused on in-person patient experience
+
+No massive software overhaul. No new hires. Just smart automation built on tools that already exist.
+
+If your front desk spends hours on repetitive tasks, there's a good chance AI can give that time back — faster and cheaper than you think.
+
+Curious what this could look like for your business? Drop a comment or send me a DM — happy to share how we approached it.

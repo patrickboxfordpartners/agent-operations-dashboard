@@ -1,0 +1,105 @@
+{
+  "entities": {
+    "clients": [
+      {
+        "id": "client_smilecare_dental",
+        "name": "SmileCare Dental",
+        "vertical": "healthcare"
+      }
+    ],
+    "pain_points": [
+      {
+        "id": "pain_b960094e",
+        "description": "Front desk staff were spending 15 hours per week on manual appointment scheduling, costing $13,520 annually in staff time due to slow calendar checking, phone tag, duplicate EHR data entry, and a ~20% missed confirmation rate.",
+        "vertical": "healthcare"
+      }
+    ],
+    "solutions": [
+      {
+        "id": "sol_2c97f74a",
+        "name": "workflow_automation",
+        "description": "Built an AI-powered scheduling assistant using Claude, Typeform, and Make.com that automates 68% of the scheduling workflow. The system handles smart intake, real-time availability checking with optimal slot suggestions, automated SMS/email confirmations, and daily batch sync to the Dentrix EHR. A human-in-the-loop step was retained for edge cases such as group appointments and special requests.",
+        "tools": [
+          "Typeform",
+          "Make.com",
+          "Claude API (Sonnet)",
+          "Google Calendar API",
+          "Twilio",
+          "Dentrix"
+        ],
+        "reusability_score": 0.7
+      }
+    ],
+    "tools": [
+      {
+        "id": "tool_typeform",
+        "name": "Typeform"
+      },
+      {
+        "id": "tool_makecom",
+        "name": "Make.com"
+      },
+      {
+        "id": "tool_claude_api_(sonnet)",
+        "name": "Claude API (Sonnet)"
+      },
+      {
+        "id": "tool_google_calendar_api",
+        "name": "Google Calendar API"
+      },
+      {
+        "id": "tool_twilio",
+        "name": "Twilio"
+      },
+      {
+        "id": "tool_dentrix",
+        "name": "Dentrix"
+      }
+    ]
+  },
+  "relationships": [
+    {
+      "from": "sol_2c97f74a",
+      "to": "tool_typeform",
+      "type": "USES_TOOL"
+    },
+    {
+      "from": "sol_2c97f74a",
+      "to": "tool_makecom",
+      "type": "USES_TOOL"
+    },
+    {
+      "from": "sol_2c97f74a",
+      "to": "tool_claude_api_(sonnet)",
+      "type": "USES_TOOL"
+    },
+    {
+      "from": "sol_2c97f74a",
+      "to": "tool_google_calendar_api",
+      "type": "USES_TOOL"
+    },
+    {
+      "from": "sol_2c97f74a",
+      "to": "tool_twilio",
+      "type": "USES_TOOL"
+    },
+    {
+      "from": "sol_2c97f74a",
+      "to": "tool_dentrix",
+      "type": "USES_TOOL"
+    },
+    {
+      "from": "client_smilecare_dental",
+      "to": "pain_b960094e",
+      "type": "HAS_PAIN"
+    },
+    {
+      "from": "pain_b960094e",
+      "to": "sol_2c97f74a",
+      "type": "SOLVED_BY",
+      "project_id": "proj_2024_smilecaredental_workflow_automation_a334b5",
+      "roi": "68% time reduction (15 hrs/week \u2192 5 hrs/week), $9,194 annual savings, zero double-bookings, +18 point NPS increase",
+      "date": "2024-03-15"
+    }
+  ]
+}

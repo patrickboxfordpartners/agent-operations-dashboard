@@ -1,0 +1,213 @@
+{
+  "transactions": [
+    {
+      "transaction": {
+        "id": "txn_001",
+        "date": "2026-04-20T00:00:00",
+        "amount": "127.45",
+        "description": "AMZN Mktp US*2X4Y7Z",
+        "merchant": "Amazon"
+      },
+      "category": {
+        "id": "cat_001",
+        "name": "Office Supplies"
+      },
+      "confidence": 0.72,
+      "reasoning": "Amazon is a listed merchant for Office Supplies, and Plaid flags this as Computers and Electronics. Could be office supplies, equipment, or personal purchase. Amount of $127.45 is plausible for either office supplies or a small electronics purchase.",
+      "needs_review": true,
+      "review_reason": "Amazon purchases are ambiguous \u2014 could be office supplies, software/equipment, or a personal item. Plaid category 'Computers and Electronics' may suggest equipment rather than consumable supplies. Please verify the actual item purchased."
+    },
+    {
+      "transaction": {
+        "id": "txn_002",
+        "date": "2026-04-19T00:00:00",
+        "amount": "2500.00",
+        "description": "ACH DEPOSIT PAYROLL",
+        "merchant": null
+      },
+      "category": {
+        "id": "cat_008",
+        "name": "Client Revenue"
+      },
+      "confidence": 0.55,
+      "reasoning": "A $2,500 ACH deposit is consistent with a client invoice payment for a small consulting business. However, the description says 'PAYROLL' which is unusual for a sole proprietor receiving client payments, and the Plaid category is incorrectly flagged as 'Bank Fees > Overdraft', which is clearly a misclassification by Plaid.",
+      "needs_review": true,
+      "review_reason": "Description reads 'PAYROLL' which could indicate W-2 income from an employer rather than consulting revenue, or it could be a mislabeled client ACH transfer. Plaid's categorization as 'Overdraft' is likely wrong. Clarify the source \u2014 if this is owner compensation from the business, it may be an Owner Draw instead."
+    },
+    {
+      "transaction": {
+        "id": "txn_003",
+        "date": "2026-04-18T00:00:00",
+        "amount": "45.00",
+        "description": "DROPBOX SUBSCRIPTION",
+        "merchant": "Dropbox"
+      },
+      "category": {
+        "id": "cat_002",
+        "name": "Software & Subscriptions"
+      },
+      "confidence": 0.99,
+      "reasoning": "Dropbox is an explicitly listed merchant under Software & Subscriptions, the description says 'SUBSCRIPTION', and Plaid confirms 'Service > Software'. Clear-cut business software expense.",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "transaction": {
+        "id": "txn_004",
+        "date": "2026-04-17T00:00:00",
+        "amount": "89.50",
+        "description": "SHELL OIL 57543985",
+        "merchant": "Shell"
+      },
+      "category": {
+        "id": "cat_004",
+        "name": "Travel & Vehicle"
+      },
+      "confidence": 0.97,
+      "reasoning": "Shell is an explicitly listed merchant under Travel & Vehicle, description references Shell Oil, and Plaid confirms 'Transportation > Gas Stations'. Straightforward fuel expense.",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "transaction": {
+        "id": "txn_005",
+        "date": "2026-04-16T00:00:00",
+        "amount": "1200.00",
+        "description": "LANDLORD PROPERTY LLC",
+        "merchant": null
+      },
+      "category": {
+        "id": "cat_005",
+        "name": "Rent & Lease"
+      },
+      "confidence": 0.97,
+      "reasoning": "Description is 'LANDLORD PROPERTY LLC', which matches both the 'landlord' and 'property' merchant keywords for Rent & Lease. Plaid confirms 'Payment > Rent'. $1,200 is a typical monthly rent amount for office space.",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "transaction": {
+        "id": "txn_006",
+        "date": "2026-04-15T00:00:00",
+        "amount": "156.78",
+        "description": "KROGER #4523",
+        "merchant": "Kroger"
+      },
+      "category": {
+        "id": "cat_010",
+        "name": "Uncategorized"
+      },
+      "confidence": 0.8,
+      "reasoning": "Kroger is a grocery supermarket with no clear business purpose for a consulting sole proprietor. It does not match any business expense category keywords or merchants. Most likely a personal grocery purchase.",
+      "needs_review": true,
+      "review_reason": "Kroger supermarket purchases are typically personal groceries and not deductible business expenses. If items were purchased for a client event or office, please specify. Otherwise, this should be excluded from business records."
+    },
+    {
+      "transaction": {
+        "id": "txn_007",
+        "date": "2026-04-14T00:00:00",
+        "amount": "29.99",
+        "description": "ADOBE CREATIVE CLOUD",
+        "merchant": "Adobe"
+      },
+      "category": {
+        "id": "cat_002",
+        "name": "Software & Subscriptions"
+      },
+      "confidence": 0.99,
+      "reasoning": "Adobe is an explicitly listed merchant under Software & Subscriptions, the description confirms 'ADOBE CREATIVE CLOUD', and Plaid confirms 'Service > Software'. Common tool for consultants producing presentations or marketing materials.",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "transaction": {
+        "id": "txn_008",
+        "date": "2026-04-13T00:00:00",
+        "amount": "75.00",
+        "description": "AT&T WIRELESS",
+        "merchant": "AT&T"
+      },
+      "category": {
+        "id": "cat_006",
+        "name": "Utilities"
+      },
+      "confidence": 0.97,
+      "reasoning": "AT&T is an explicitly listed merchant under Utilities, description is 'AT&T WIRELESS', and Plaid confirms 'Bills and Utilities > Phone'. Phone service is a standard deductible utility for a consulting business.",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "transaction": {
+        "id": "txn_009",
+        "date": "2026-04-12T00:00:00",
+        "amount": "450.00",
+        "description": "INSURANCE PREMIUM",
+        "merchant": "State Farm"
+      },
+      "category": {
+        "id": "cat_007",
+        "name": "Insurance"
+      },
+      "confidence": 0.98,
+      "reasoning": "State Farm is an explicitly listed merchant under Insurance, description says 'INSURANCE PREMIUM', and Plaid confirms 'Service > Insurance'. $450 is a plausible premium for business or professional liability insurance.",
+      "needs_review": false,
+      "review_reason": null
+    },
+    {
+      "transaction": {
+        "id": "txn_010",
+        "date": "2026-04-11T00:00:00",
+        "amount": "23.45",
+        "description": "STARBUCKS STORE 12345",
+        "merchant": "Starbucks"
+      },
+      "category": {
+        "id": "cat_003",
+        "name": "Meals & Entertainment"
+      },
+      "confidence": 0.9,
+      "reasoning": "Starbucks is an explicitly listed merchant under Meals & Entertainment, and Plaid confirms 'Food and Drink > Restaurants > Coffee Shop'. $23.45 is slightly high for a solo coffee but could include a client meeting or multiple items.",
+      "needs_review": false,
+      "review_reason": null
+    }
+  ],
+  "stats": {
+    "total": 10,
+    "high_confidence": 7,
+    "needs_review": 3,
+    "categories_used": {
+      "Office Supplies": 1,
+      "Client Revenue": 1,
+      "Software & Subscriptions": 2,
+      "Travel & Vehicle": 1,
+      "Rent & Lease": 1,
+      "Uncategorized": 1,
+      "Utilities": 1,
+      "Insurance": 1,
+      "Meals & Entertainment": 1
+    }
+  },
+  "reconciliation": {
+    "total": 10,
+    "by_status": {
+      "new": 10,
+      "matched": 0,
+      "duplicate": 0,
+      "conflict": 0
+    },
+    "conflicts": [],
+    "duplicates": [],
+    "ready_to_post": [
+      "txn_001",
+      "txn_002",
+      "txn_003",
+      "txn_004",
+      "txn_005",
+      "txn_006",
+      "txn_007",
+      "txn_008",
+      "txn_009",
+      "txn_010"
+    ]
+  }
+}

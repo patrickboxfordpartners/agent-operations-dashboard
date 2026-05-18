@@ -1,0 +1,177 @@
+[
+  {
+    "lead": {
+      "lead_id": "lead_001_hot",
+      "name": "Sarah Johnson",
+      "email": "sarah@abcdental.com",
+      "company": "ABC Dental Practice",
+      "vertical": "healthcare",
+      "company_size": "8 employees",
+      "source": "website_form",
+      "message": "\n        Hi, I'm the office manager at ABC Dental. We're spending 15+ hours per week\n        on manual appointment scheduling and it's costing us about $15k annually in\n        staff time. I saw your case study with SmileCare Dental and we have the exact\n        same pain points. We have budget approved to fix this ASAP - our busy season\n        starts in 6 weeks. Can we schedule a call this week?\n        ",
+      "pain_signals": [],
+      "budget_signals": [],
+      "urgency_signals": [],
+      "received_at": "2026-04-25T19:11:07.154380"
+    },
+    "score": {
+      "lead_id": "lead_001_hot",
+      "overall_score": 9,
+      "pain_clarity": 10,
+      "budget_likelihood": 9,
+      "decision_authority": 7,
+      "ai_readiness": 8,
+      "urgency": 10,
+      "reasoning": "Sarah presents an exceptionally well-qualified lead with a quantified pain point ($15K annually, 15+ hours/week), explicitly approved budget, and a hard deadline driven by an upcoming busy season in 6 weeks. She has already self-educated via a relevant case study and is requesting immediate action, signaling high intent and urgency. The only mild uncertainty is her role as office manager rather than owner/dentist, which may mean a final sign-off step exists \u2014 but her language around budget approval suggests strong influence or delegated authority.",
+      "key_strengths": [
+        "Quantified pain point \u2014 $15K annual cost and 15+ hours/week provides clear ROI anchor for the sales conversation",
+        "Budget explicitly stated as approved, removing a major qualification hurdle",
+        "Hard deadline (busy season in 6 weeks) creates natural urgency and a compelling reason to act now",
+        "Already familiar with your brand via the SmileCare Dental case study \u2014 significantly shortens the awareness/education phase",
+        "Inbound, self-initiated contact requesting a call this week \u2014 highest possible buying intent signal"
+      ],
+      "concerns": [
+        "Office manager title may not be the final decision maker \u2014 confirm whether the dentist/owner needs to approve the vendor contract before signing",
+        "Small company size (8 employees) may limit deal size or expansion potential beyond initial use case",
+        "No relevant case studies currently loaded to reinforce the SmileCare reference she already cited \u2014 ensure that asset is available before the call"
+      ],
+      "recommended_action": "engage_immediately",
+      "talking_points": [
+        "Reference SmileCare Dental specifically \u2014 she already trusts that case study, so open by confirming you understand her exact workflow challenges and can replicate those results",
+        "Anchor the ROI conversation around her $15K figure \u2014 show how quickly the solution pays for itself relative to implementation cost",
+        "Address the 6-week timeline head-on: walk her through your typical onboarding timeline and confirm whether you can have her live before the busy season starts",
+        "Clarify decision process early: ask 'Is there anyone else, such as the practice owner, who would need to be looped in before we move forward?' to avoid late-stage surprises",
+        "Quantify the cost of delay \u2014 every week of inaction is approximately $288 in wasted staff time ($15K \u00f7 52 weeks), reinforcing urgency without being pushy"
+      ],
+      "relevant_case_studies": [],
+      "scored_at": "2026-04-25T19:11:23.226522"
+    },
+    "sequence": {
+      "lead_id": "lead_001_hot",
+      "sequence_type": "high_intent",
+      "emails": [
+        {
+          "email_number": 1,
+          "subject": "Re: ABC Dental's 15+ hours/week scheduling problem",
+          "body": "Hi Sarah,\n\nYou already know the SmileCare story \u2014 so you know exactly what's possible here.\n\nWhat stood out to me: your $15K annual figure is precise, your budget is approved, and you have a hard deadline in 6 weeks. That's rare, and it means we can move fast.\n\nQuick insight before we even talk: practices your size typically recover that $15K within the first 4\u20135 months post-implementation. The math flips quickly.\n\nI'd love to do a 15-minute 'AI Quick Win' audit this week \u2014 I'll map your current scheduling workflow against our onboarding timeline and tell you honestly whether we can have you live before your busy season hits.\n\nNo fluff, just answers.\n\n[Book your 15-min audit here \u2192 LINK]\n\nTalk soon,\n[Your Name]",
+          "send_delay_hours": 0,
+          "cta": "Book a 15-minute AI Quick Win audit call this week"
+        },
+        {
+          "email_number": 2,
+          "subject": "Can ABC Dental go live in 6 weeks?",
+          "body": "Hi Sarah,\n\nStill thinking about your timeline \u2014 so let me answer the question you're probably asking internally.\n\nOur typical onboarding for a single-location dental practice runs 3\u20134 weeks from signed agreement to go-live. That puts you comfortably ahead of your busy season, assuming we start this week.\n\nOne thing worth flagging early: is there anyone else at ABC Dental \u2014 the practice owner, for example \u2014 who'd need to sign off before moving forward? Getting them looped in now (even just a 10-minute intro) prevents any last-minute delays.\n\nAlso worth noting: every week of inaction costs roughly $288 in staff time. Six weeks of delay is nearly $1,700 \u2014 before your busy season even starts.\n\nWorth a conversation?\n\nReply with a simple 'yes' and I'll send over two calendar options today.\n\n[Your Name]",
+          "send_delay_hours": 72,
+          "cta": "Reply 'yes' to receive two calendar options for a call"
+        },
+        {
+          "email_number": 3,
+          "subject": "Still a priority for ABC Dental?",
+          "body": "Hi Sarah,\n\nI don't want to assume \u2014 busy season timelines shift, priorities change, and inboxes get chaotic.\n\nSo I'll ask directly: is solving the scheduling problem still on your radar for this quarter?\n\nIf yes, I'm ready to move quickly \u2014 your situation is exactly what we built this for, and the 6-week window is still workable.\n\nIf the timing has changed or you've gone a different direction, no hard feelings at all. Just let me know and I'll stop reaching out.\n\nEither way, reply here and I'll take it from there.\n\nWishing ABC Dental a smooth busy season regardless,\n[Your Name]\n\nP.S. \u2014 If this isn't relevant anymore, you can reply 'unsubscribe' and I'll remove you from my outreach immediately.",
+          "send_delay_hours": 192,
+          "cta": "Reply to confirm interest or reply 'unsubscribe' to opt out"
+        }
+      ],
+      "generated_at": "2026-04-25T19:11:40.403607"
+    }
+  },
+  {
+    "lead": {
+      "lead_id": "lead_002_medium",
+      "name": "Tom Martinez",
+      "email": "tom@lawfirm.com",
+      "company": "Martinez & Associates Law",
+      "vertical": "legal",
+      "company_size": "5-10",
+      "source": "linkedin_dm",
+      "message": "\n        Hey, came across your profile and saw you do AI automation for small businesses.\n        We're a small law firm and client intake is taking forever. Not sure exactly\n        what we need but curious to learn more about what's possible. What do you\n        typically charge for something like this?\n        ",
+      "pain_signals": [],
+      "budget_signals": [],
+      "urgency_signals": [],
+      "received_at": "2026-04-25T19:11:07.156115"
+    },
+    "score": {
+      "lead_id": "lead_002_medium",
+      "overall_score": 5,
+      "pain_clarity": 6,
+      "budget_likelihood": 4,
+      "decision_authority": 7,
+      "ai_readiness": 4,
+      "urgency": 4,
+      "reasoning": "Tom has identified a real, specific operational pain point (client intake speed) and is actively reaching out, which signals genuine interest rather than passive browsing. However, he admits uncertainty about the solution, hasn't indicated budget, and the 'curious to learn more' framing suggests early-stage exploration rather than imminent buying intent. As a named partner at a small firm, he likely has decision authority, but the small company size (5-10 staff) raises questions about budget capacity and AI infrastructure readiness.",
+      "key_strengths": [
+        "Specific pain point identified \u2014 client intake bottleneck is a well-defined, solvable problem",
+        "Likely decision maker as named partner/owner of the firm",
+        "Proactively reached out and asked about pricing, indicating purchase intent curiosity",
+        "Small law firms have high ROI potential for intake automation with relatively low implementation complexity"
+      ],
+      "concerns": [
+        "No budget signals \u2014 asking about pricing early can mean cost-conscious or unprepared",
+        "Admitted uncertainty ('not sure exactly what we need') suggests solution awareness is low",
+        "Very small firm (5-10 people) may have limited budget ceiling and low AI infrastructure maturity",
+        "No urgency language \u2014 'taking forever' is frustration but not a crisis signal",
+        "No relevant case studies available to build credibility in the legal vertical"
+      ],
+      "recommended_action": "qualify_further",
+      "talking_points": [
+        "Ask what the current intake process looks like \u2014 how many steps, who handles it, and how many leads/clients come in per week",
+        "Quantify the pain: 'How much time per week is your team spending on intake, and what does that cost you in billable hours?'",
+        "Gauge urgency: 'Is this something you're looking to fix in the next few weeks, or are you in research mode right now?'",
+        "Soft budget probe: 'Firms your size typically invest somewhere between $X and $Y for this \u2014 does that ballpark work for you?'",
+        "Educate on what AI intake automation can do specifically for law firms \u2014 lead capture, conflict checks, appointment scheduling, follow-up sequences",
+        "Position ROI in legal terms: every hour saved on intake = billable hours recovered"
+      ],
+      "relevant_case_studies": [],
+      "scored_at": "2026-04-25T19:11:55.555173"
+    },
+    "sequence": null
+  },
+  {
+    "lead": {
+      "lead_id": "lead_003_low",
+      "name": "Alex Chen",
+      "email": "alex@startup.com",
+      "company": "TechStartup Inc",
+      "vertical": "saas",
+      "company_size": "unknown",
+      "source": "email",
+      "message": "\n        Hi, I'm exploring AI tools for our business. Just seeing what's out there.\n        Can you send me some information about your services?\n        ",
+      "pain_signals": [],
+      "budget_signals": [],
+      "urgency_signals": [],
+      "received_at": "2026-04-25T19:11:07.156353"
+    },
+    "score": {
+      "lead_id": "lead_003_low",
+      "overall_score": 2,
+      "pain_clarity": 1,
+      "budget_likelihood": 2,
+      "decision_authority": 3,
+      "ai_readiness": 3,
+      "urgency": 1,
+      "reasoning": "Alex's message is a textbook early-stage exploration inquiry with no specific pain points, no urgency signals, and no indication of budget or authority. The phrase 'just seeing what's out there' strongly suggests this is an informational browse rather than an active buying process. Without knowing company size or Alex's role, there is no basis to assume decision-making power or near-term commitment.",
+      "key_strengths": [
+        "Works in SaaS vertical, which generally has higher AI adoption appetite",
+        "Proactively reached out, indicating at least baseline curiosity about AI integration"
+      ],
+      "concerns": [
+        "Zero pain specificity \u2014 no operational problem or business challenge mentioned",
+        "Explicitly framed as exploratory ('just seeing what's out there'), not solution-seeking",
+        "No budget signals whatsoever",
+        "Company size unknown, making fit assessment impossible",
+        "Role and decision authority completely unclear",
+        "No urgency or timeline indicated",
+        "Generic information request suggests low engagement depth"
+      ],
+      "recommended_action": "nurture_sequence",
+      "talking_points": [
+        "Ask a single, open-ended discovery question: 'What's the one operational bottleneck in your SaaS workflow you wish you could automate tomorrow?' \u2014 this surfaces latent pain without feeling pushy",
+        "Briefly mention a concrete AI outcome relevant to SaaS (e.g., reducing churn prediction time, automating onboarding) to give Alex a tangible anchor to react to",
+        "Clarify Alex's role early: 'Are you evaluating this for your team, or is this more of a personal research project?' \u2014 determines authority and seriousness without being blunt"
+      ],
+      "relevant_case_studies": [],
+      "scored_at": "2026-04-25T19:12:05.999076"
+    },
+    "sequence": null
+  }
+]

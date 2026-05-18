@@ -1,0 +1,111 @@
+[
+  {
+    "pain_id": "pain_4ac5e06d",
+    "vertical": "small business",
+    "source": "reddit",
+    "source_url": "https://reddit.com/r/smallbusiness/example1",
+    "title": "Manual Invoice Creation & Payment Follow-Up for Small Consultancies",
+    "description": "Solo consultants and micro-teams are losing 10+ hours per week on invoicing workflows that should take minutes. Despite using accounting software like QuickBooks, the process of compiling time logs, generating invoices, and chasing late payments remains largely manual. This directly caps their billable capacity and revenue ceiling.",
+    "evidence_quotes": [
+      "Every week I spend at least 10 hours creating invoices, tracking time, following up on payments. Using QuickBooks but still so manual."
+    ],
+    "frequency": "widespread",
+    "urgency": "high",
+    "estimated_market_size": "10,000+",
+    "proposed_solution": "Build a QuickBooks-integrated automation layer that: (1) ingests time-tracking data (Toggl, Harvest, Clockify) and auto-generates invoice drafts, (2) uses AI to flag anomalies or missing entries before sending, and (3) triggers personalized payment follow-up email sequences via LLM when invoices hit 7/14/30 days overdue. Tools like Zapier + OpenAI API + QuickBooks API make this achievable without a full custom build.",
+    "estimated_build_time": "3-4 weeks",
+    "estimated_roi": "$2,000-$4,000/month in recovered billable hours (10 hrs/week \u00d7 $50-100/hr consultant rate)",
+    "discovered_at": "2026-04-25T19:20:33.604796"
+  },
+  {
+    "pain_id": "pain_24ee467e",
+    "vertical": "small business",
+    "source": "reddit",
+    "source_url": "https://reddit.com/r/smallbusiness/example2",
+    "title": "Client Onboarding Bottleneck Blocking Revenue Growth at Small Law Firms",
+    "description": "Small law firms are hitting a hard growth ceiling because manual client onboarding consumes 2-3 hours per new client \u2014 forms, contracts, intake calls, and file setup. This isn't just an efficiency problem; it's a revenue constraint. Firms are actively turning away clients they cannot onboard, making this a critical, quantifiable business problem.",
+    "evidence_quotes": [
+      "New client onboarding takes 2-3 hours per client. Forms, contracts, intake calls, setting up files. We're at capacity and can't take more clients because onboarding is so time consuming."
+    ],
+    "frequency": "common",
+    "urgency": "critical",
+    "estimated_market_size": "10,000+",
+    "proposed_solution": "Deploy an AI-powered onboarding pipeline: (1) a smart intake form (Typeform or custom) with conditional logic that captures all required information upfront, (2) auto-generated, pre-populated contract drafts using document automation (DocuSign + template engine), and (3) an LLM-based intake summarizer that converts form responses into a structured client brief \u2014 eliminating the intake call entirely or reducing it to 15 minutes. Practice management systems like Clio have APIs that enable automated file creation on completion.",
+    "estimated_build_time": "3-4 weeks",
+    "estimated_roi": "70-80% time reduction per client onboarding (from 2-3 hrs to 30 min), enabling 4-6x more new clients per week at current staffing",
+    "discovered_at": "2026-04-25T19:20:33.605146"
+  },
+  {
+    "pain_id": "pain_03026c9f",
+    "vertical": "small business",
+    "source": "reddit",
+    "source_url": "https://reddit.com/r/smallbusiness/example1",
+    "title": "Time Tracking Inaccuracy and Compilation Overhead for Contractor-Based Businesses",
+    "description": "Businesses managing contractors face a compounding problem: time data lives in multiple places, formats vary by contractor, and the owner must manually reconcile and validate everything before invoicing. This is a hidden tax on every billing cycle that grows proportionally with team size. The problem is upstream of invoicing and often the root cause of the 10-hour weekly burden.",
+    "evidence_quotes": [
+      "I run a small consulting business (just me + 2 contractors). Every week I spend at least 10 hours creating invoices, tracking time, following up on payments."
+    ],
+    "frequency": "common",
+    "urgency": "high",
+    "estimated_market_size": "10,000+",
+    "proposed_solution": "Implement a centralized time-tracking aggregator with AI validation: (1) standardize contractor time submission via a single tool (Harvest or Toggl Teams), (2) use an automation layer (Make.com) to consolidate entries weekly and flag outliers (unusually high hours, missing project codes, gaps) using rule-based + LLM anomaly detection, and (3) auto-route approved time data directly to invoice generation. This addresses the root inefficiency rather than just the invoicing symptom.",
+    "estimated_build_time": "1-2 weeks",
+    "estimated_roi": "4-6 hours/week recovered per business owner, worth $200-$600/week at typical consulting rates \u2014 plus reduced billing errors that cause client disputes",
+    "discovered_at": "2026-04-25T19:20:33.605187"
+  },
+  {
+    "pain_id": "pain_7cb35885",
+    "vertical": "healthcare",
+    "source": "reddit",
+    "source_url": "https://reddit.com/r/dentistry/example3",
+    "title": "High Appointment No-Show Rate Despite Manual Reminders",
+    "description": "Dental and healthcare practices are losing significant revenue from 15-20% no-show rates even after sending standard email and text reminders. At $200-300 per missed appointment, a mid-sized practice with 50+ weekly appointments could be hemorrhaging $1,500-3,000+ per week. Generic, static reminders fail to account for patient behavior patterns or risk factors.",
+    "evidence_quotes": [
+      "We send reminder emails and texts but still getting 15-20% no-show rate. Each no-show costs us $200-300 in lost revenue. Manual follow-up isn't working."
+    ],
+    "frequency": "widespread",
+    "urgency": "critical",
+    "estimated_market_size": "10,000+",
+    "proposed_solution": "AI-driven predictive no-show scoring model that analyzes historical patient data (past cancellations, appointment type, time of day, day of week, weather, demographics) to flag high-risk appointments. Automatically escalates outreach for high-risk patients \u2014 additional SMS, personalized call scripts, or overbooking triggers \u2014 while reducing noise for low-risk patients. Integrates with existing EHR/PMS systems (Dentrix, Eaglesoft, etc.) via API.",
+    "estimated_build_time": "2-3 months",
+    "estimated_roi": "$2,000-6,000/month in recovered revenue per practice (assuming 20-40% reduction in no-shows)",
+    "discovered_at": "2026-04-25T19:20:52.268149"
+  },
+  {
+    "pain_id": "pain_54cb677f",
+    "vertical": "healthcare",
+    "source": "reddit",
+    "source_url": "https://reddit.com/r/dentistry/example3",
+    "title": "Inefficient Manual Follow-Up Process for At-Risk Appointments",
+    "description": "Staff are spending manual time attempting follow-up calls and messages on no-show-risk appointments without a systematic or prioritized workflow. This creates both a labor cost and an opportunity cost \u2014 staff time is consumed on outreach that isn't intelligently targeted, while high-risk slots go unfilled. There is no automated waitlist or slot-backfill mechanism in place.",
+    "evidence_quotes": [
+      "Manual follow-up isn't working."
+    ],
+    "frequency": "widespread",
+    "urgency": "high",
+    "estimated_market_size": "10,000+",
+    "proposed_solution": "Automated appointment backfill system using an AI-managed waitlist \u2014 when a cancellation or predicted no-show is detected, the system automatically contacts waitlisted patients via SMS/email in priority order, confirms availability, and books the slot without staff intervention. Conversation handled via AI chat/SMS agent, with staff only notified upon successful rebooking.",
+    "estimated_build_time": "3-4 weeks",
+    "estimated_roi": "$1,000-3,000/month in recovered slot revenue plus 5-8 hours/week staff time saved",
+    "discovered_at": "2026-04-25T19:20:52.268197"
+  },
+  {
+    "pain_id": "pain_c4180f28",
+    "vertical": "healthcare",
+    "source": "reddit",
+    "source_url": "https://reddit.com/r/dentistry/example3",
+    "title": "Static, One-Size-Fits-All Reminder Sequences with No Personalization",
+    "description": "Current reminder systems send the same email and text to every patient regardless of their history, communication preferences, or appointment type \u2014 resulting in poor engagement and ineffective nudges. Patients who need a phone call are getting emails; patients who booked 6 months ago need different messaging than those who booked yesterday. The lack of adaptive, personalized communication is a direct driver of the 15-20% no-show rate.",
+    "evidence_quotes": [
+      "We send reminder emails and texts but still getting 15-20% no-show rate.",
+      "What are other practices doing?"
+    ],
+    "frequency": "common",
+    "urgency": "high",
+    "estimated_market_size": "10,000+",
+    "proposed_solution": "AI-personalized reminder orchestration layer that dynamically selects channel (SMS, email, voice), message content, tone, and timing based on individual patient profiles and historical engagement data. Uses LLM-generated message variants A/B tested over time, with reinforcement learning optimizing sequences per patient segment. Can sit on top of existing PMS reminder tools as a middleware layer, minimizing switching costs.",
+    "estimated_build_time": "2-3 months",
+    "estimated_roi": "10-30% reduction in no-show rate = $1,500-4,500/month recovered revenue for average practice",
+    "discovered_at": "2026-04-25T19:20:52.268226"
+  }
+]

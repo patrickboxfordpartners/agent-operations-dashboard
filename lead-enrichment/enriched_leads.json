@@ -1,0 +1,239 @@
+{
+  "leads": [
+    {
+      "raw": {
+        "id": "lead_001",
+        "email": "john.smith@acmecorp.com",
+        "name": "John Smith"
+      },
+      "person": {
+        "name": "John Smith",
+        "title": "VP of Operations",
+        "seniority": "senior"
+      },
+      "company": {
+        "name": "Unknown",
+        "industry": null,
+        "employees": null,
+        "revenue_range": null,
+        "technologies": []
+      },
+      "score": {
+        "overall": 38,
+        "grade": "D"
+      },
+      "insights": {
+        "key_insights": [
+          "\ud83d\udd34 RED FLAG: Critical data gaps \u2014 company size, industry, and revenue are all unknown, making it nearly impossible to tailor a relevant pitch or confirm ICP fit. Data enrichment is required before meaningful outreach.",
+          "\ud83d\udd34 RED FLAG: Weak buying signals across the board (Funding: 20, Growth: 25, Tech Debt: 30) suggest the company is not in an active investment or expansion phase, lowering urgency and likelihood of near-term purchase.",
+          "\ud83d\udfe1 MIXED SIGNAL: John Smith holds a VP of Operations title, scoring 82 on Decision Maker authority \u2014 he likely has budget influence or approval power, which is a meaningful asset if the company profile can be validated.",
+          "\ud83d\udd34 RED FLAG: Low Tech Stack score (20) indicates either incompatibility with your solution, inability to verify their current tools, or a legacy environment that may require significant change management.",
+          "\ud83d\udfe1 TIMING CONSIDERATION: With no visible growth or funding signals, there is no natural urgency trigger. Outreach should focus on creating urgency through business outcome framing rather than capitalizing on a market moment."
+        ],
+        "approach": "Before any outreach, prioritize data enrichment using tools like ZoomInfo, Clearbit, or LinkedIn Sales Navigator to fill in company size, industry, revenue, and tech stack \u2014 without this, personalization will be superficial and conversion is unlikely. If enrichment confirms even partial ICP fit, reach out via LinkedIn (given mid-range Findability score of 45) with a concise, operations-focused message that speaks to efficiency, cost reduction, or risk mitigation rather than product features. Given the low urgency signals, position this as a low-pressure discovery conversation rather than a sales pitch, and set a 30-60 day follow-up cadence rather than aggressive short-term pursuit.",
+        "talking_points": [
+          "\ud83c\udfaf PAIN POINT \u2014 Operational Efficiency: As a VP of Operations, John is likely accountable for reducing waste, streamlining workflows, and hitting margin targets. Lead with questions like: 'What's your biggest bottleneck in [operations area] right now?' to uncover active pain.",
+          "\ud83c\udfaf PAIN POINT \u2014 Tech Debt & Process Gaps: The Tech Debt score of 30 hints at potential legacy systems or manual processes. Ask: 'Are there areas in your ops stack where your team is working around tools rather than with them?' to surface frustration points.",
+          "\ud83d\udca1 VALUE PROP \u2014 ROI & Cost Justification: Given no strong growth or funding signals, budget scrutiny is likely high. Frame your solution around measurable cost savings or time reclaimed rather than innovation or scale.",
+          "\u2753 DISCOVERY QUESTION \u2014 Validate Fit First: 'What does your current operations tech stack look like, and where do you feel the most friction?' \u2014 this simultaneously uncovers fit and signals whether a deeper conversation is warranted.",
+          "\u26a0\ufe0f QUALIFICATION QUESTION \u2014 Uncover Budget Authority: Given unclear company data, ask early: 'When your team evaluates new operational tools, what does that decision-making process typically look like?' \u2014 this confirms his actual authority level and reveals the buying process."
+        ]
+      },
+      "confidence": 0.4,
+      "cost": 0.08
+    },
+    {
+      "raw": {
+        "id": "lead_002",
+        "email": "sarah.johnson@techstartup.io",
+        "name": "Sarah Johnson"
+      },
+      "person": {
+        "name": "Sarah Johnson",
+        "title": "CEO & Founder",
+        "seniority": "c_level"
+      },
+      "company": {
+        "name": "TechStartup.io",
+        "industry": "Technology",
+        "employees": 25,
+        "revenue_range": "$1M-$5M",
+        "technologies": [
+          "AWS",
+          "React",
+          "PostgreSQL",
+          "Stripe"
+        ]
+      },
+      "score": {
+        "overall": 62,
+        "grade": "C"
+      },
+      "insights": {
+        "key_insights": [
+          "\ud83d\udfe2 STRONG ENTRY POINT \u2014 Sarah is a confirmed CEO & Founder (Decision Maker score: 88) with high findability (82), meaning outreach can go directly to the economic buyer without navigating gatekeepers.",
+          "\ud83d\udfe2 FUNDING & GROWTH SIGNALS ARE HOT \u2014 Scores of 82 (Funding) and 78 (Growth) suggest TechStartup.io is in an active scaling phase, likely recently funded or revenue-positive and hiring. This creates urgency and budget availability \u2014 timing is favorable NOW.",
+          "\ud83d\udd34 INDUSTRY FIT IS THE BIGGEST RED FLAG \u2014 Industry score of 35 is the lowest across all dimensions. Investigate whether 'Technology' as a vertical aligns with your ICP. This may indicate a mismatch in use case, compliance needs, or buyer persona relative to your core customer profile.",
+          "\ud83d\udfe1 TECH DEBT IS A WEAK SIGNAL (45) \u2014 Limited evidence of pressing technical pain points or legacy system issues. Avoid leading with 'fix your broken stack' messaging; instead anchor on growth enablement and scaling efficiently.",
+          "\ud83d\udfe1 COMPANY SIZE IS BORDERLINE \u2014 At 25 employees, TechStartup.io sits at the lower edge of a typical mid-market ICP (size score: 72). Revenue score (55) suggests they may not yet have the budget for premium tiers. Validate budget capacity early to avoid a long cycle with a low-ACV outcome."
+        ],
+        "approach": "Reach out within the next 7\u201314 days while funding/growth momentum is high \u2014 delay risks losing relevance as priorities shift post-raise. Contact Sarah directly via LinkedIn or email with a founder-to-founder (or founder-focused) message that acknowledges her growth trajectory and frames your solution as a scaling accelerator, NOT a problem-fixer. Keep the first touch brief, insight-led, and low-commitment (e.g., share a relevant benchmark or insight for 25-person tech companies scaling post-funding), then propose a 20-minute discovery call to assess mutual fit before investing heavily in the opportunity.",
+        "talking_points": [
+          "\ud83d\udca1 SCALING PAIN: 'Most tech founders at your stage (Series A / post-seed, ~25 people) tell us the biggest bottleneck isn't product \u2014 it's operationalizing growth without breaking what's working. How are you thinking about that right now?' \u2014 Opens discovery around her real priority.",
+          "\ud83d\udca1 FUNDING WINDOW: 'Congrats on the recent momentum \u2014 companies that instrument the right [tool/process] in the 6\u201312 months post-funding tend to see 2\u20133x better efficiency at the 50-person milestone. We've helped [similar company] do exactly that.' \u2014 Leverages the funding signal with a relevant proof point.",
+          "\ud83d\udca1 FOUNDER-LED ANGLE: As CEO & Founder, Sarah likely wears multiple hats and values speed-to-value. Lead with 'easy to implement, fast to show ROI' messaging over feature depth. Ask: 'What does success look like for you personally in the next 90 days?' to align on her agenda.",
+          "\ud83d\udca1 TECH STACK ALIGNMENT: With a moderate tech stack score (60), probe for integration needs early \u2014 'What tools are core to your workflow right now?' \u2014 This surfaces compatibility risks before the demo stage and avoids a late-stage technical blocker.",
+          "\u26a0\ufe0f  QUALIFICATION QUESTION \u2014 BUDGET: Given the revenue score (55) and company size, ask early: 'Are you currently evaluating solutions in this space, and do you have budget allocated, or would this need to go through an approval process?' \u2014 Saves cycles if budget isn't accessible yet."
+        ]
+      },
+      "confidence": 1.0,
+      "cost": 0.08
+    },
+    {
+      "raw": {
+        "id": "lead_003",
+        "email": "mike.brown@locallaw.com",
+        "name": "Mike Brown"
+      },
+      "person": {
+        "name": "Mike Brown",
+        "title": "Office Manager",
+        "seniority": "mid"
+      },
+      "company": {
+        "name": "Local Law Firm",
+        "industry": "Legal Services",
+        "employees": 12,
+        "revenue_range": "$1M-$5M",
+        "technologies": [
+          "Clio",
+          "Microsoft 365",
+          "QuickBooks"
+        ]
+      },
+      "score": {
+        "overall": 65,
+        "grade": "C"
+      },
+      "insights": {
+        "key_insights": [
+          "\ud83d\udfe2 Strong ICP fit on industry (92) and company size (78) \u2014 small legal firms are a sweet spot, likely dealing with document management, billing, and compliance pain points typical of under-resourced legal teams.",
+          "\ud83d\udfe2 Mike Brown scores reasonably well as a decision maker (78) \u2014 as Office Manager at a 12-person firm, he likely controls operational budgets and vendor relationships without heavy executive approval layers.",
+          "\ud83d\udd34 No meaningful funding or growth signals (Funding: 20, Growth: 45) \u2014 this firm is likely stable but not in active expansion mode, meaning budget urgency is low and ROI justification will need to be airtight.",
+          "\ud83d\udfe1 Tech Debt score of 70 suggests outdated or inefficient tooling in place \u2014 this is a real opening, as the firm may be tolerating legacy systems out of inertia rather than satisfaction.",
+          "\ud83d\udfe1 Revenue score of 62 indicates a smaller budget ceiling \u2014 deal size expectations should be calibrated accordingly; focus on fast time-to-value and low switching costs to reduce perceived risk."
+        ],
+        "approach": "Reach out via a personalized email or LinkedIn message mid-week (Tuesday\u2013Thursday), leading with a specific operational pain point common to small law firms \u2014 such as manual time tracking, document chaos, or compliance overhead \u2014 rather than a generic product pitch. Given the lack of active growth or funding signals, this is not a 'strike now' urgent lead, but worth a low-pressure nurture sequence; position your solution as a cost-saver or efficiency gain rather than a growth enabler. Aim for a consultative first touch that asks a diagnostic question, making Mike feel like you understand his world before pitching anything.",
+        "talking_points": [
+          "\u2696\ufe0f 'Small legal teams often spend 20\u201330% of their week on administrative tasks \u2014 are manual processes around [billing/documents/scheduling] eating into your team's time?' \u2014 opens with empathy and a quantified pain point.",
+          "\ud83d\udd27 Lean into the Tech Debt signal: 'Many firms your size tell us they're still running on tools that weren't built for legal workflows \u2014 what does your current stack look like for [specific use case]?' \u2014 surfaces dissatisfaction without being presumptuous.",
+          "\ud83d\udcb0 With a tighter budget profile, lead with cost consolidation or ROI: 'Firms like yours typically see X hours saved per week, which translates to roughly $Y in recovered billable time' \u2014 make the math easy and concrete.",
+          "\ud83d\udccb Compliance and risk are high-sensitivity topics in legal: 'With increasing data privacy requirements, how is your team currently handling [client data security / document retention policies]?' \u2014 positions your solution as a risk reducer, not just a convenience.",
+          "\ud83d\ude80 Close the first conversation with a low-commitment ask: 'Would it be worth a 20-minute call to see if this is even a fit for a firm your size? No pressure \u2014 I'd rather save us both time if it's not.' \u2014 reduces friction and respects his time, which builds trust with office managers who are notoriously time-strapped."
+        ]
+      },
+      "confidence": 1.0,
+      "cost": 0.08
+    },
+    {
+      "raw": {
+        "id": "lead_004",
+        "email": "emily.davis@bigcorp.com",
+        "name": "Emily Davis"
+      },
+      "person": {
+        "name": "Emily Davis",
+        "title": "IT Manager",
+        "seniority": "mid"
+      },
+      "company": {
+        "name": "Unknown",
+        "industry": null,
+        "employees": null,
+        "revenue_range": null,
+        "technologies": []
+      },
+      "score": {
+        "overall": 22,
+        "grade": "F"
+      },
+      "insights": {
+        "key_insights": [
+          "\ud83d\udea8 RED FLAG: Extremely low overall score of 22/100 (Grade F) \u2014 this lead falls well below the threshold for prioritized outreach and should be deprioritized in favor of higher-scoring prospects.",
+          "\ud83d\udea8 RED FLAG: Critical data gaps detected \u2014 company name is 'Unknown' with no employee count or revenue data available, making it nearly impossible to qualify this lead against your ICP or tailor a meaningful pitch.",
+          "\u26a0\ufe0f WEAK BUYING SIGNALS: Both Funding (10) and Growth (10) scores are critically low, suggesting no recent funding events, hiring surges, or expansion signals that would indicate active budget availability or urgency to buy.",
+          "\u26a0\ufe0f CONTACT QUALITY CONCERNS: Emily Davis holds an IT Manager title (Decision Maker score: 35/100), meaning she likely influences but may not own the final purchasing decision \u2014 a budget holder or CTO/CIO may need to be involved to advance any deal.",
+          "\ud83d\udfe1 MINOR POSITIVE: Tech Debt score (25) is the highest buying signal indicator, hinting there may be some underlying infrastructure or tooling pain worth probing \u2014 but this alone is insufficient to justify significant sales investment."
+        ],
+        "approach": "Given the severe data gaps and low score, the immediate priority should be lead enrichment \u2014 use tools like Apollo, ZoomInfo, or LinkedIn to identify Emily's company, size, industry, and tech stack before any outreach attempt. If enrichment reveals the company aligns with your ICP, a lightweight, low-effort touchpoint such as a personalized LinkedIn connection request or a brief cold email referencing potential tech debt or IT operational challenges is the appropriate first step \u2014 avoid investing significant time in calls or demos at this stage. Only escalate this lead to active pursuit if enrichment data raises the score above 50 and confirms budget authority or active buying intent.",
+        "talking_points": [
+          "\ud83d\udd27 TECH DEBT ANGLE: 'Many IT Managers we speak with are dealing with legacy systems or mismatched tools that create inefficiencies \u2014 is that something your team is navigating right now?' (Probe the highest-scoring signal)",
+          "\ud83d\udcca DISCOVERY FIRST: 'Can you help me understand your current IT environment and what your biggest operational priorities are for the next 6\u201312 months?' (Fill data gaps while qualifying)",
+          "\ud83d\udca1 VALUE PROP \u2014 EFFICIENCY: Position your solution around reducing IT overhead, consolidating tools, or automating manual processes \u2014 relevant for an IT Manager likely measured on uptime, cost control, and team productivity.",
+          "\ud83c\udfe2 COMPANY CONTEXT: 'I'd love to learn more about your organization \u2014 what industry are you in and how large is your IT team?' (Tactfully gather missing firmographic data during conversation)",
+          "\ud83e\udd1d STAKEHOLDER MAPPING: 'For decisions like this, who else is typically involved \u2014 do you work closely with a CTO or VP of IT on vendor evaluations?' (Identify true decision-maker without alienating the contact)"
+        ]
+      },
+      "confidence": 0.4,
+      "cost": 0.08
+    },
+    {
+      "raw": {
+        "id": "lead_005",
+        "email": "alex.martinez@solopreneur.com",
+        "name": "Alex Martinez"
+      },
+      "person": {
+        "name": "Alex Martinez",
+        "title": "Founder",
+        "seniority": "c_level"
+      },
+      "company": {
+        "name": "Solo Consulting",
+        "industry": "Consulting",
+        "employees": 1,
+        "revenue_range": "$100K-$500K",
+        "technologies": [
+          "Gmail",
+          "Google Workspace"
+        ]
+      },
+      "score": {
+        "overall": 18,
+        "grade": "F"
+      },
+      "insights": {
+        "key_insights": [
+          "\ud83d\udd34 CRITICAL SIZE MISMATCH: Solo operator with 1 employee scores 5/100 on company size \u2014 this lead falls far outside ideal customer profile and likely lacks budget, infrastructure, or team complexity to justify your solution.",
+          "\ud83d\udd34 EXTREMELY LOW REVENUE POTENTIAL: Revenue score of 5/100 signals minimal spending power; expect low deal value, long justification cycles, and high churn risk if acquired.",
+          "\ud83d\udfe1 INDUSTRY IS A BRIGHT SPOT: Industry score of 75/100 suggests consulting vertical is relevant \u2014 Alex may understand the problem space well, but the business stage makes conversion highly unlikely right now.",
+          "\ud83d\udd34 NO BUYING SIGNALS: Funding (5) and Growth (15) scores indicate no recent investment, no hiring momentum, and no scaling activity \u2014 the classic 'not in buying mode' profile.",
+          "\ud83d\udfe2 DECISION MAKER ACCESSIBILITY: Despite poor fit, Alex scores 80/100 as a decision maker \u2014 as Founder, there are no gatekeepers or committee hurdles, which could make a quick qualification call easy to execute if you choose to pursue."
+        ],
+        "approach": "Do not prioritize this lead for active outreach \u2014 redirect sales resources to higher-scoring accounts. If you choose to engage at all, a single low-effort touchpoint (brief personalized email, no calls or demos) is appropriate to test interest without burning cycles. Position any message around future growth and scalability ('when your practice grows beyond just you'), then move Alex into a long-term nurture sequence and revisit only if company size, funding, or growth signals change.",
+        "talking_points": [
+          "\u26a0\ufe0f QUALIFY FAST \u2014 Ask directly: 'Are you planning to grow your team or take on larger client engagements in the next 6\u201312 months?' This immediately separates a future opportunity from a dead end.",
+          "\ud83c\udfaf SOLO FOUNDER PAIN POINT: Independent consultants often struggle with wearing every hat \u2014 if your product reduces operational overhead or automates admin tasks, lead with time savings: 'Our clients get back X hours/week to focus on billable work.'",
+          "\ud83d\udca1 FUTURE-STATE FRAMING: Avoid ROI pitches tied to team size today. Instead ask, 'What does your business look like at 5 or 10 employees?' \u2014 this surfaces growth intent and lets you position as the tool they grow into.",
+          "\ud83d\udd27 TECH STACK GAP (Score: 30): Low tech stack alignment suggests Alex may be under-tooled or using DIY solutions \u2014 explore with: 'What tools are you currently using to manage [relevant workflow]? Are those holding you back as you scale?'",
+          "\ud83d\udccb SET A NURTURE TRIGGER: Before closing the conversation, establish a re-engagement hook \u2014 'I'll check back in Q3 \u2014 if you've brought on even one contractor by then, it's worth a 20-minute conversation.' This respects their current stage while keeping the door open."
+        ]
+      },
+      "confidence": 1.0,
+      "cost": 0.08
+    }
+  ],
+  "stats": {
+    "total": 5,
+    "enriched": 5,
+    "grades": {
+      "A": 0,
+      "B": 0,
+      "C": 2,
+      "D": 1,
+      "F": 2
+    },
+    "avg_confidence": 0.76,
+    "total_cost": 0.4
+  }
+}
